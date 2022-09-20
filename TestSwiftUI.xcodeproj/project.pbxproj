@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		7F2B41F128D1EBAB00243A56 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B41F028D1EBAB00243A56 /* UserSettings.swift */; };
 		7F2B41F328D21D0F00243A56 /* NewScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B41F228D21D0F00243A56 /* NewScreenView.swift */; };
+		7F4B2AEF28D90C3F000A44C0 /* TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B2AEE28D90C3F000A44C0 /* TEST.swift */; };
 		7FB8E4DB28D1E237007CEE9E /* TestSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8E4DA28D1E237007CEE9E /* TestSwiftUIApp.swift */; };
 		7FB8E4DD28D1E237007CEE9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8E4DC28D1E237007CEE9E /* ContentView.swift */; };
 		7FB8E4DF28D1E238007CEE9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB8E4DE28D1E238007CEE9E /* Assets.xcassets */; };
 		7FB8E4E328D1E238007CEE9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB8E4E228D1E238007CEE9E /* Preview Assets.xcassets */; };
+		7FCB96C328D873F800544EEE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB96C228D873F800544EEE /* StartView.swift */; };
+		7FCB96C528D874E900544EEE /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB96C428D874E900544EEE /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F2B41F028D1EBAB00243A56 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		7F2B41F228D21D0F00243A56 /* NewScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScreenView.swift; sourceTree = "<group>"; };
+		7F4B2AEE28D90C3F000A44C0 /* TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST.swift; sourceTree = "<group>"; };
 		7FB8E4D728D1E237007CEE9E /* TestSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB8E4DA28D1E237007CEE9E /* TestSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIApp.swift; sourceTree = "<group>"; };
 		7FB8E4DC28D1E237007CEE9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FB8E4DE28D1E238007CEE9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FB8E4E028D1E238007CEE9E /* TestSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestSwiftUI.entitlements; sourceTree = "<group>"; };
 		7FB8E4E228D1E238007CEE9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FCB96C228D873F800544EEE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		7FCB96C428D874E900544EEE /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				7FB8E4DA28D1E237007CEE9E /* TestSwiftUIApp.swift */,
+				7FCB96C228D873F800544EEE /* StartView.swift */,
 				7F2B41F028D1EBAB00243A56 /* UserSettings.swift */,
+				7FCB96C428D874E900544EEE /* SecondView.swift */,
+				7F4B2AEE28D90C3F000A44C0 /* TEST.swift */,
 				7FB8E4DC28D1E237007CEE9E /* ContentView.swift */,
 				7FB8E4DE28D1E238007CEE9E /* Assets.xcassets */,
 				7FB8E4E028D1E238007CEE9E /* TestSwiftUI.entitlements */,
@@ -145,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCB96C528D874E900544EEE /* SecondView.swift in Sources */,
 				7FB8E4DD28D1E237007CEE9E /* ContentView.swift in Sources */,
+				7FCB96C328D873F800544EEE /* StartView.swift in Sources */,
 				7F2B41F128D1EBAB00243A56 /* UserSettings.swift in Sources */,
+				7F4B2AEF28D90C3F000A44C0 /* TEST.swift in Sources */,
 				7FB8E4DB28D1E237007CEE9E /* TestSwiftUIApp.swift in Sources */,
 				7F2B41F328D21D0F00243A56 /* NewScreenView.swift in Sources */,
 			);

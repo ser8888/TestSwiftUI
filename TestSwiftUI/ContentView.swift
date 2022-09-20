@@ -7,12 +7,8 @@
 
 import SwiftUI
 
-class User: ObservableObject{
-    @Published var firstName = "Ivan"
-    @Published var lastName = "Kolzov"
-}
 
-struct ShowDetailView {
+struct DetailView {
     
     var body: some View {
         Text("New screen")
@@ -20,42 +16,39 @@ struct ShowDetailView {
 }
 
 struct ContentView: View {
-    
-    @ObservedObject private var user = User()
-    @ObservedObject private var settings = UserSettings()
+  
     @State private var showingDetail = false
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+       
             
-            Text("User name is \(user.firstName), \(user.lastName)")
-            Text("your scoare is \(settings.score)")
-            Button {
-                settings.score += 1
-                ShowLicenseAgreement()
-            } label: {
-                Text("Increase score")
+            Button(action: {
+                showingDetail.toggle()
+            }) {
+                Text("Show License Agreement")
             }
-
-            TextField("Enter name", text: $user.firstName)
-            TextField("enter last name", text: $user.lastName)
+            .sheet(isPresented: $showingDetail){
+                VStack {
+                    Text("License Agreement")
+                        .font(.title)
+                        .padding(50)
+                    Text("""
+                        Terms and conditions go here.
+                    """)
+                    .padding(50)
+                    Button("Dismiss",
+                           action: { showingDetail.toggle() })
+                    
+                }
             
-//            Button {
-//                showingDetail.toggle()
-//            } label: {
-//                Text("New screen")
-//            } .sheet(isPresented: $showingDetail) {
-//                ShowDetailView()
-//            }
-
-
         }
-        .padding()
+       
     }
 }
+func didDismiss() {
+    // Handle the dismissing action.
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

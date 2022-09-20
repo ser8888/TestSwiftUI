@@ -17,8 +17,7 @@ struct ShowLicenseAgreement: View {
         }) {
             Text("Show License Agreement")
         }
-        .sheet(isPresented: $isShowingSheet,
-               onDismiss: didDismiss) {
+        .sheet(isPresented: $isShowingSheet) {
             VStack {
                 Text("License Agreement")
                     .font(.title)
